@@ -50,3 +50,11 @@ C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub
 C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.csprojResolveAssemblyReference.cache
 C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.dll
 C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.pdb
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\bin\EntityFramework.dll
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\bin\EntityFramework.SqlServer.dll
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\bin\EntityFramework.xml
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\bin\EntityFramework.SqlServer.xml
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\bin\App_Data\Database.mdf
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\bin\App_Data\Database_log.ldf
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.Migrations.userModel.resources
+C:\Users\Антон\Source\Repos\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.csproj.GenerateResource.Cache
