@@ -7,6 +7,7 @@ namespace FitnessClub.Models
 {
     public class EntityModel : DbContext
     {
-        public DbSet<UserModel> Users { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Notation> Notations { get; set; }
     }
 }

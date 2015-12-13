@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden" id="hidden">
-                        <a href="#page-top"></a>
+                        <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li  id="aboutScroll" class="">
                         <a class="page-scroll" href="#about">О нас</a>
@@ -57,12 +57,21 @@
                     <li id="teamScroll" class="">
                         <a class="page-scroll" href="#team">Инструкторы</a>
                     </li>
-                    <li id="teamScroll" class="">
+                    <li id="priceScroll" class="">
                         <a class="page-scroll" href="#price">Цены</a>
                     </li>
                     <li id="newsScroll" class="">
                         <a class="page-scroll" href="#news">Новости</a>
-                    </li> 
+                    </li>
+                    @if (Request.IsAuthenticated)
+                    {
+                       <li id="config" class="">
+                            <a href="#"><i class="fa fa-briefcase"></i></a>
+                        </li>
+                        <li id="exit" class="">
+                            <a href="@Url.Action("Logoff", "Account")"><i class="fa fa-sign-out"></i></a>
+                        </li>
+                    }
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -73,7 +82,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading">Добро пожаловать в фитнес клуб SportVita!</div>
-                <a href="#services" class="page-scroll btn btn-xl">Записаться</a>
+                <a class="page-scroll btn btn-xl" data-toggle="modal" data-target="#modalEnroll">Записаться</a>
             </div>
         </div>
     </header>
@@ -86,7 +95,7 @@
                     <div class="col-md-4">
                         <span class="copyright">Copyright &copy; Your Website 2014</span>
                     </div>
-                    <div class="col-md-4">
+                    s<div class="col-md-4">
                         <ul class="list-inline social-buttons">
                             <li>
                                 <a href="https://vk.com/"><i class="fa fa-vk"></i></a>
