@@ -132,6 +132,14 @@
     <Compile Include="Migrations\201512131647276_Information.Designer.cs">
       <DependentUpon>201512131647276_Information.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512141820363_news.cs" />
+    <Compile Include="Migrations\201512141820363_news.Designer.cs">
+      <DependentUpon>201512141820363_news.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512141853035_deleteNews.cs" />
+    <Compile Include="Migrations\201512141853035_deleteNews.Designer.cs">
+      <DependentUpon>201512141853035_deleteNews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Information.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -361,6 +369,12 @@
     <EmbeddedResource Include="Migrations\201512131647276_Information.resx">
       <DependentUpon>201512131647276_Information.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512141820363_news.resx">
+      <DependentUpon>201512141820363_news.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512141853035_deleteNews.resx">
+      <DependentUpon>201512141853035_deleteNews.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -412,6 +426,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Information\" />
+    <Folder Include="Views\News\" />
     <Folder Include="Views\Notation\" />
   </ItemGroup>
   <PropertyGroup>

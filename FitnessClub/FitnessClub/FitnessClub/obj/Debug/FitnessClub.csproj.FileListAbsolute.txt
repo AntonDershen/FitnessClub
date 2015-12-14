@@ -95,3 +95,5 @@ D:\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.pdb
 D:\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.Migrations._1.resources
 D:\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.Migrations.notation.resources
 D:\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.Migrations.Information.resources
+D:\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.Migrations.news.resources
+D:\FitnessClub\FitnessClub\FitnessClub\FitnessClub\obj\Debug\FitnessClub.Migrations.deleteNews.resources

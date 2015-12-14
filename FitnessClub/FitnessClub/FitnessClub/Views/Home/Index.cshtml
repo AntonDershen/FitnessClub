@@ -238,89 +238,6 @@
 
             </div>
         </section>
-
-        <section id="news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Новости</h2>
-                        <h3 class="section-subheading text-muted"></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="timeline">
-                            <li>
-                                <div class="timeline-image">
-                                    @*<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">*@
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>2009-2011</h4>
-                                        <h4 class="subheading">Our Humble Beginnings</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    @*<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">*@
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>March 2011</h4>
-                                        <h4 class="subheading">An Agency is Born</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="timeline-image">
-                                    @*<img class="img-circle img-responsive" src="img/about/3.jpg" alt="">*@
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>December 2012</h4>
-                                        <h4 class="subheading">Transition to Full Service</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    @*<img class="img-circle img-responsive" src="img/about/4.jpg" alt="">*@
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>July 2014</h4>
-                                        <h4 class="subheading">Phase Two Expansion</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <h4>
-                                        Be Part
-                                        <br>Of Our
-                                        <br>Story!
-                                    </h4>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </div>
 
     <!-- services Modals -->
@@ -596,7 +513,7 @@
                     </div>
                     <br />
                     <div class="input-group col-md-offset-4">
-                        <input type="text" id="MobilenRoll" class="form-control" style="border-radius: 4px" placeholder="Номер телефона" aria-describedby="basic-addon1">
+                        <input type="tel"  id="MobilenRoll" class="form-control" style="border-radius: 4px" placeholder="Номер телефона" aria-describedby="basic-addon1">
                     </div>
                     <br />
                 </div>
@@ -607,18 +524,37 @@
         </div>
     </div>
     <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabelError">
+   
+</div>
+    <div class="modal fade" id="modalNews" tabindex="-1" role="dialog" aria-labelledby="myModalLabelError">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabelError">Ошибка</h4>
+                    <h4 class="modal-title" id="modalNewsLabel">Добавить новость</h4>
                 </div>
-                <div class="modal-body">
-                    <h3>Все поля должны быть заполнены</h3>
-                    <br />
-                    <br />
+                <div class="container">
+                    <div class="modal-body">
+                        <div class="input-group  col-md-offset-4">
+                            <input type="text" class="form-control" id="URL" placeholder="Cсылка на изображение" aria-describedby="basic-addon1">
+                        </div>
+                        <br/>
+                        <div class="input-group  col-md-offset-4">
+                            <input type="text" class="form-control" id="NameNews" placeholder="Название" aria-describedby="basic-addon1">
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <div class="editable" id="bodyNews" style="border-color: #000000">
+
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" id="addNewsButton" class="btn btn-primary">Добавить</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </body>
@@ -652,8 +588,8 @@
 
 <script>
 
-    var elements = [$("#navbar"), $('#about'), $('#services'), $('#schedule'), $('#team'), $('#price'), $('#news')];
-    var elementsScroll = [$("#hidden"), $('#aboutScroll'), $('#servicesScroll'), $('#scheduleScroll'), $('#teamScroll'), $('#priceScroll'), $('#newsScroll')];
+    var elements = [$("#navbar"), $('#about'), $('#services'), $('#schedule'), $('#team'), $('#price')];
+    var elementsScroll = [$("#hidden"), $('#aboutScroll'), $('#servicesScroll'), $('#scheduleScroll'), $('#teamScroll'), $('#priceScroll')];
     var activeElement = 0;
     var enable = true;
     var newActiveElement = 0;
@@ -670,7 +606,9 @@
         console.log(activeElement + "\n" + newActiveElement + "\n" + enable);
 
         if (enable == true) {
-            elementsScroll[activeElement].removeClass("active");
+            for(var i = 0;i< elementsScroll.length;i++){
+                elementsScroll[i].removeClass("active");
+            }
             elementsScroll[newActiveElement].addClass("active");
             enable = false;
             activeElement = newActiveElement;
