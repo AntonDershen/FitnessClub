@@ -1,0 +1,45 @@
+﻿@model IEnumerable<FitnessClub.Models.Notation>
+
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet"/>
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewNotation</title>
+</head>
+<body>
+ 
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                <a href="@Url.Action("RemoveNotation", "Notation", new {id = item.NotationId})"><i class="fa fa-remove"></i></a>
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

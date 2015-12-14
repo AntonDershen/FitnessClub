@@ -10,7 +10,9 @@ namespace FitnessClub.Models
     {
         [Key]
         public int NotationId { get; set; }
+        [Display(Name = "Имя")]
         public string Name { get; set; }
+        [Display(Name = "Номер телефона")]
         public string PhoneNumber { get; set; }
     }
 }
