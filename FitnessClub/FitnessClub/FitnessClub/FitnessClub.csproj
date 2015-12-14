@@ -423,11 +423,11 @@
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.eot" />
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\readme.md" />
     <Content Include="Scripts\tinymce\langs\readme.md" />
+    <Content Include="Views\Notation\ViewNotation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Information\" />
     <Folder Include="Views\News\" />
-    <Folder Include="Views\Notation\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
