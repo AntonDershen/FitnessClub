@@ -171,7 +171,11 @@
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\func-training.jpg" />
+    <Content Include="Content\inst1.jpg" />
+    <Content Include="Content\inst2.jpg" />
+    <Content Include="Content\inst3.jpg" />
     <Content Include="Content\low-body-training.jpg" />
+    <Content Include="Content\pilates.jpg" />
     <Content Include="Content\str-class.jpg" />
     <Content Include="Content\stretching.jpg" />
     <Content Include="Content\zumba.jpg" />
