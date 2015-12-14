@@ -1,10 +1,9 @@
 ﻿
-
 <body>
 
 
     <!-- Header -->
-<!-- Services Section -->
+    <!-- Services Section -->
     <div id="content" data-spy="scroll">
         <section id="about">
             <div class="container">
@@ -67,7 +66,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6 services-item">
-                        <a href="#servicesModal1" class="services-link" data-toggle="modal">
+                        <a href="#1" class="services-link" data-toggle="modal">
                             <div class="services-hover">
                                 <div class="services-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -81,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 services-item">
-                        <a href="#servicesModal2" class="services-link" data-toggle="modal">
+                        <a href="#2" class="services-link" data-toggle="modal">
                             <div class="services-hover">
                                 <div class="services-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -95,7 +94,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 services-item">
-                        <a href="#servicesModal3" class="services-link" data-toggle="modal">
+                        <a href="#3" class="services-link" data-toggle="modal">
                             <div class="services-hover">
                                 <div class="services-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -109,7 +108,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 services-item">
-                        <a href="#servicesModal4" class="services-link" data-toggle="modal">
+                        <a href="#4" class="services-link" data-toggle="modal">
                             <div class="services-hover">
                                 <div class="services-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -123,7 +122,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 services-item">
-                        <a href="#servicesModal5" class="services-link" data-toggle="modal">
+                        <a href="#5" class="services-link" data-toggle="modal">
                             <div class="services-hover">
                                 <div class="services-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -137,7 +136,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 services-item">
-                        <a href="#servicesModal6" class="services-link" data-toggle="modal">
+                        <a href="#6" class="services-link" data-toggle="modal">
                             <div class="services-hover">
                                 <div class="services-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -321,215 +320,307 @@
                 </div>
             </div>
         </section>
-    
+
     </div>
 
-        <!-- services Modals -->
-        <!-- Use the modals below to showcase details about your services projects! -->
-        <!-- services Modal 1 -->
-        <div class="services-modal modal fade" id="servicesModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- services Modals -->
+    <!-- Use the modals below to showcase details about your services projects! -->
+    <!-- services Modal 1 -->
+    <div class="services-modal modal fade" id="1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-header">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <h2 class="editable" id="header-1"></h2>
+                    }
+                    else
+                    {
+                        <h2 id="header-1"></h2>
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            @if (Request.IsAuthenticated)
+                            {
+                                <div class="editable" id="body-1">
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="body-1">
+
+                                </div>
+                            }
+                            <button type="button" class="btn btn-success modalSave" data-dismiss="modal" id="button-1">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services Modal 2 -->
+    <div class="services-modal modal fade" id="2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-header">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <h2 class="editable" id="header-2"></h2>
+                    }
+                    else
+                    {
+                        <h2 id="header-2"></h2>
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            @if (Request.IsAuthenticated)
+                            {
+                                <div class="editable" id="body-2">
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="body-2">
+
+                                </div>
+                            }
+                            <button type="button" class="btn btn-success modalSave" data-dismiss="modal" id="button-2">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services Modal 3 -->
+    <div class="services-modal modal fade" id="3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-header">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <h2 class="editable" id="header-3"></h2>
+                    }
+                    else
+                    {
+                        <h2 id="header-3"></h2>
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            @if (Request.IsAuthenticated)
+                            {
+                                <div class="editable" id="body-3">
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="body-3">
+
+                                </div>
+                            }
+                            <button type="button" class="btn btn-success modalSave" data-dismiss="modal" id="button-3">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services Modal 4 -->
+    <div class="services-modal modal fade" id="4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-header">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <h2 class="editable" id="header-4"></h2>
+                    }
+                    else
+                    {
+                        <h2 id="header-4"></h2>
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            @if (Request.IsAuthenticated)
+                            {
+                                <div class="editable" id="body-4">
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="body-4">
+
+                                </div>
+                            }
+                            <button type="button" class="btn btn-success modalSave" data-dismiss="modal" id="button-4">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services Modal 5 -->
+    <div class="services-modal modal fade" id="5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-header">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <h2 class="editable" id="header-5"></h2>
+                    }
+                    else
+                    {
+                        <h2 id="header-5"></h2>
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            @if (Request.IsAuthenticated)
+                            {
+                                <div class="editable" id="body-5">
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="body-5">
+
+                                </div>
+                            }
+                            <button type="button" class="btn btn-success modalSave" data-dismiss="modal" id="button-5">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services Modal 6 -->
+    <div class="services-modal modal fade" id="6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-header">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <h2 class="editable" id="header-6"></h2>
+                    }
+                    else
+                    {
+                        <h2 id="header-6"></h2>
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            @if (Request.IsAuthenticated)
+                            {
+                                <div class="editable" id="body-6">
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="body-6">
+
+                                </div>
+                            }
+                            <button type="button" class="btn btn-success modalSave" data-dismiss="modal" id="button-6">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalEnroll" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Анкета</h4>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                @*<img class="img-responsive img-centered" src="img/services/roundicons-free.png" alt="">*@
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this services item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
+                <div class="modal-body">
+                    <div class="input-group col-md-offset-4">
+                        <input type="text" id="FIOenRoll" class="form-control" style="border-radius: 4px" placeholder="ФИО" aria-describedby="basic-addon1">
                     </div>
+                    <br />
+                    <div class="input-group col-md-offset-4">
+                        <input type="text" id="MobilenRoll" class="form-control" style="border-radius: 4px" placeholder="Номер телефона" aria-describedby="basic-addon1">
+                    </div>
+                    <br />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="enRollButton" class="btn btn-primary">Записаться</button>
                 </div>
             </div>
         </div>
-        <!-- services Modal 2 -->
-        <div class="services-modal modal fade" id="servicesModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabelError">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabelError">Ошибка</h4>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                @*<img class="img-responsive img-centered" src="img/services/startup-framework-preview.png" alt="">*@
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h3>Все поля должны быть заполнены</h3>
+                    <br />
+                    <br />
                 </div>
             </div>
         </div>
-        <!-- services Modal 3 -->
-        <div class="services-modal modal fade" id="servicesModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                @*<img class="img-responsive img-centered" src="img/services/treehouse-preview.png" alt="">*@
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this services sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- services Modal 4 -->
-        <div class="services-modal modal fade" id="servicesModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                @*<img class="img-responsive img-centered" src="img/services/golden-preview.png" alt="">*@
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great services, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this services sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- services Modal 5 -->
-        <div class="services-modal modal fade" id="servicesModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                @*<img class="img-responsive img-centered" src="img/services/escape-preview.png" alt="">*@
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this services sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- services Modal 6 -->
-        <div class="services-modal modal fade" id="servicesModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                @*<img class="img-responsive img-centered" src="img/services/dreams-preview.png" alt="">*@
-                                <p>
-                                    Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.
-                                </p>
-                                <p>
-                                    You can download the PSD template in this services sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.
-                                </p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalEnroll" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Анкета</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="input-group col-md-offset-4">
-                            <input type="text" id="FIOenRoll" class="form-control" style="border-radius: 4px" placeholder="ФИО" aria-describedby="basic-addon1">
-                        </div>
-                        <br />
-                        <div class="input-group col-md-offset-4">
-                            <input type="text" id="MobilenRoll" class="form-control" style="border-radius: 4px" placeholder="Номер телефона" aria-describedby="basic-addon1">
-                        </div>
-                        <br />
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" id="enRollButton" class="btn btn-primary">Записаться</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabelError">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabelError">Ошибка</h4>
-                    </div>
-                    <div class="modal-body">
-                        <h3>Все поля должны быть заполнены</h3>
-                        <br />
-                        <br />
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 </body>
 
 <script>
@@ -561,29 +652,107 @@
 
 <script>
 
-        var elements = [$("#navbar"), $('#about'), $('#services'), $('#schedule'), $('#team'), $('#price'), $('#news')];
-        var elementsScroll = [$("#hidden"), $('#aboutScroll'), $('#servicesScroll'), $('#scheduleScroll'), $('#teamScroll'), $('#priceScroll'), $('#newsScroll')];
-        var activeElement = 0;
-        var enable = true;
-        var newActiveElement = 0;
-        var navbar = $("#navbar");
-        $(window).scroll(function () {
-            var w = $(this);
-            elements.forEach(function (item, i, elements) {
-                if (w.scrollTop() > (item.offset().top - w.height() + 4*navbar.height())) {
-                    newActiveElement = i;
-                }
-            });
-            if (activeElement != newActiveElement)
-                enable = true;
-            console.log(activeElement + "\n" + newActiveElement+"\n"+enable);
-
-            if(enable == true)
-            {
-                elementsScroll[activeElement].removeClass("active");
-                elementsScroll[newActiveElement].addClass("active");
-                enable = false;
-                activeElement = newActiveElement;
+    var elements = [$("#navbar"), $('#about'), $('#services'), $('#schedule'), $('#team'), $('#price'), $('#news')];
+    var elementsScroll = [$("#hidden"), $('#aboutScroll'), $('#servicesScroll'), $('#scheduleScroll'), $('#teamScroll'), $('#priceScroll'), $('#newsScroll')];
+    var activeElement = 0;
+    var enable = true;
+    var newActiveElement = 0;
+    var navbar = $("#navbar");
+    $(window).scroll(function() {
+        var w = $(this);
+        elements.forEach(function(item, i, elements) {
+            if (w.scrollTop() > (item.offset().top - w.height() + 4 * navbar.height())) {
+                newActiveElement = i;
             }
         });
+        if (activeElement != newActiveElement)
+            enable = true;
+        console.log(activeElement + "\n" + newActiveElement + "\n" + enable);
+
+        if (enable == true) {
+            elementsScroll[activeElement].removeClass("active");
+            elementsScroll[newActiveElement].addClass("active");
+            enable = false;
+            activeElement = newActiveElement;
+        }
+    });
+</script>
+
+@if (Request.IsAuthenticated)
+{
+    <script>
+        tinymce.init({
+            selector: 'h2.editable',
+            inline: true,
+            toolbar: 'undo redo',
+            menubar: false
+        });
+
+        tinymce.init({
+            selector: 'div.editable',
+            inline: true,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table contextmenu paste'
+            ],
+            toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image'
+        });
+
     </script>
+    <script>
+        var save = false;
+        $('.modalSave').click(function (e) {
+
+            var elements = e.currentTarget.id.split('-');
+            var header2 = $("#header-" + elements[1]).html();
+            var body2 = $("#body-" + elements[1]).html();
+            var res = "";
+            while (true) {
+                res = body2.replace("<", "#%^").replace(">", "#&*");
+                if (res.localeCompare(body2) == 0)
+                    break;
+                body2 = res;
+            }
+            $.post(
+                '@Url.Action("SetInformationHeader", "Information")',
+                {
+                    id: elements[1],
+                    header: header2
+                }
+            );
+            $.post(
+                '@Url.Action("SetInformationBody", "Information")',
+                {
+                    id: elements[1],
+                    bodyText: body2
+                }
+            );
+        });
+
+    </script>
+}
+<script>
+        $('.services-modal').on('show.bs.modal', function (e) {
+            $.post(
+                '@Url.Action("GetInformationHeader", "Information")',
+                {
+                    id: e.currentTarget.id
+                },
+                function (result) {
+                    console.log("#header-" + e.currentTarget.id);
+                    $("#header-" + e.currentTarget.id).html(result);
+                }
+            );
+            $.post(
+                '@Url.Action("GetInformationBody", "Information")',
+                {
+                    id: e.currentTarget.id
+                },
+                function (result) {
+                    $("#body-" + e.currentTarget.id).html(result);
+                }
+            );
+        });
+
+</script>

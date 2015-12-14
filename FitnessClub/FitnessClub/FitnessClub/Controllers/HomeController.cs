@@ -10,6 +10,7 @@ namespace FitnessClub.Controllers
     {
         public ActionResult Index()
         {
+            
             return View();
         }
 

@@ -9,5 +9,6 @@ namespace FitnessClub.Models
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Notation> Notations { get; set; }
+        public DbSet<Information> Information { get; set; }
     }
 }
